@@ -4,7 +4,12 @@ export default function Logon() {
     return (
         <>
             <div className="container">
-                <div className="logo">Pet Friendly</div>
+                <div className="header-logo">
+                    <label className="icone-logo"><span className="hidden">icone_logo</span></label>
+                    <label className="logo">Pet Friendly</label>
+                    {/* <div className="logo">Pet Friendly</div> */}
+
+                </div>
                 <div className="login-item">
                     <form className="form form-login">
                         <div className="form-field">
@@ -18,7 +23,7 @@ export default function Logon() {
                         </div>
 
                         <div className="form-field">
-                            <input type="submit" value="Log in" />
+                            <input type="submit" value="Entrar" />
                         </div>
                     </form>
                 </div>
