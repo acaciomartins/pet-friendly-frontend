@@ -1,0 +1,45 @@
+* {
+  background-color: #fff;
+}
+
+.main {
+  display: flex;
+  justify-content: flex-start;
+}
+.titulo_consulta {
+  font-family: "Comfortaa", cursive, serif;
+  font-size: 36px;
+  margin-top: 53px;
+  margin-left: 72px;
+}
+.content {
+  display: flex;
+  margin-top: 186px;
+  justify-content: space-around;
+}
+.form input {
+  border:none;
+  width: 95%;
+  height: 100%;
+}
+
+.form {
+  border: 2px solid;
+  border-radius: 10px;
+  box-sizing: border-box;
+  color: #000;
+  width: 399px;
+  height: 52px;
+}
+
+.find_btn {
+  border: 2px solid #000;
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding: 1rem;
+  color: #fff;
+  background-color: #000;
+  width: 399px;
+  height: 52px;
+  text-transform: uppercase;
+}
