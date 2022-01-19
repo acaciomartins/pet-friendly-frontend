@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import FormularioCadastro from "../Formulario";
 
 import './styles.css';
 
