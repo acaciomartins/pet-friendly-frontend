@@ -1,24 +1,14 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import { useForm, SubmitHandler } from "react-hook-form";
+import { useForm } from "react-hook-form";
+import { PropTypes, Usuario } from "../../model";
 
-enum SexoEnum {
-  feminino = "feminino",
-  masculino = "masculino",
-  outro = "outro"
-}
 
-interface Usuario {
-  nome: String;
-  endereco: String;
-}
 
-export default function FormularioCadastro() {
+export default function FormularioCadastro(props: PropTypes) {
   const { register, handleSubmit } = useForm<Usuario>();
-  const onSubmit: SubmitHandler<Usuario> = data => console.log(data);
+  // const onSubmit: SubmitHandler<Usuario> = data => console.log(data);
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)}>
+    <form onSubmit={handleSubmit(props.callBack)}>
       <label>Nome</label>
       <input {...register("nome")} />
       <label>Endereço</label>
