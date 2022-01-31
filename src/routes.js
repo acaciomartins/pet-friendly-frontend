@@ -3,7 +3,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import Logon from "./pages/Logon";
 import Home from "./pages/Home";
-import Cadastro from "./pages/Cadastro";
+import CadastrarUsuario from "./pages/Cadastro";
 
 export default function Routers() {
   return (
@@ -11,7 +11,7 @@ export default function Routers() {
       <Routes>
         <Route path="/" exact element={<Home />} />
         <Route path="/logon" element={<Logon />} />
-        <Route path="/cadastro" element={<Cadastro />} />
+        <Route path="/cadastro" element={<CadastrarUsuario />} />
       </Routes>
     </BrowserRouter>
   );
